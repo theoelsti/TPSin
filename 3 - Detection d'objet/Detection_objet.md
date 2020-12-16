@@ -16,18 +16,18 @@
 ---
 ##### Donner dans un tableau les principaux types de capteurs d’obstacles, leur technologies, mode de fonctionnement, distance de détection et degré de précision dans un tableau. 
 
-||Capteur à Ultrason|Détecteur Infrarouge| 
-| --|:-------  |:-|:-- |
-|Moyen utilisé|Ultrasons|Infrarouge | 
-|Distance max (en mètres)|4|0.1| 
-|Degré de précision|0.03|40°| 
+||Capteur à Ultrason|Détecteur Infrarouge
+| --|:-------  |:-|:--
+|Moyen utilisé|Ultrasons|Infrarouge 
+|Distance max (en mètres)|4|0.1
+|Degré de précision|0.03|40°
 
 ##### Dresser un tableau pour chaque type de capteurs en précisant dans chaque colonne la référence du capteur, la tension de fonctionnement, le type de signal en sortie du capteur, et si il y a lieu la présence d’un CAN intégré
-||Capteur à Ultrason|Détecteur Infrarouge| 
+||Capteur à Ultrason|Détecteur Infrarouge
 | --|:-------  |:-|:-- |
-|Référence du capteur|HC-SR04|TSOP38238 | 
-|Tension de fonctionnement|5V | 5V| 
-|Signal en sortie|Digital|Digital| 
+|Référence du capteur|HC-SR04|TSOP38238 
+|Tension de fonctionnement|5V | 5V
+|Signal en sortie|Digital|Digital
 
 
 
