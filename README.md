@@ -21,4 +21,4 @@
 
 :heavy_check_mark: **9- Détection de bordure**
 
-Pour toute demande, rendez vous sur mon [Discord](https://discord.gg/JcWXQjXfUX)
+Pour toute demande, rendez-vous sur mon [Discord](https://discord.gg/JcWXQjXfUX)
