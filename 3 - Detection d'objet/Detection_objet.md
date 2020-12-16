@@ -68,3 +68,4 @@ void loop()
 
 Le principal probleme est le suivant : si notre robot se trouve face à une surface absorbant les ondes acoustiques, il ne pourra pas déterminer la distance avec celle-ci.
 Aussi, si un obstacle se trouve a droite ou a gauche du robot, il ne pourra pas le détécter
+~Théophile FOUILLET
