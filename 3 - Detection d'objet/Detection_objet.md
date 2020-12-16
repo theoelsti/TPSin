@@ -2,7 +2,7 @@
 
 ## Préambule
 ##### Ressources
-| Features          | Tutorials               |
+| Doc          | Lien               |
 | ----------------- |:----------------------- |
 | HC-SR04 | [:link:][https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/] |
 | Browser Extension | [:link:][https://www.adafruit.com/product/157] |
