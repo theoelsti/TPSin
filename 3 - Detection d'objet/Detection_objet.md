@@ -24,7 +24,7 @@
 
 ##### Dresser un tableau pour chaque type de capteurs en précisant dans chaque colonne la référence du capteur, la tension de fonctionnement, le type de signal en sortie du capteur, et si il y a lieu la présence d’un CAN intégré
 ||Capteur à Ultrason|Détecteur Infrarouge
-| --|:-------  |:-|:-- 
+| --|:-------  |:-
 |Référence du capteur|HC-SR04|TSOP38238 
 |Tension de fonctionnement|5V | 5V
 |Signal en sortie|Digital|Digital
