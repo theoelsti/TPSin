@@ -27,13 +27,12 @@
 
 #### Donner les différents moyens permettant de détecter le bord de la piste dans un tableau. Donner 3 critères de comparaisons.
 
-|           | Inductif | Magnetique
-| - |:- |:---|:---
+|| Inductif | Magnetique
+| - |:- |:---
 | Distance max en mètres|0.1| 0.1| Ondes Radio
 | Utilisation sur :| Métal| Element composé d'un aimant
 |Fonctionnement | Lorsqu'un objet s'approche, le champ éléctromagnétique va diminuer. A partir de mesures fréquentes, on peut déterminer la distance| Un champ magnétique est envoyé sous forme de période. Si le champ recu est superieur a celui envoyé, cela signifie que la distance augmente
-|Utilisation |Vérifier si un élément passe devant le capteur| Vérifier si un élément composé d'un aimant est près du capteur
-
+|Utilisation |Vérifier si un élément passe devant le capteur|Vérifier si un élément composé d'un aimant est près du capteur
 
 
 ## Représentation
