@@ -1,5 +1,5 @@
 # 3 - Détection d'objet
-
+###### tags: `TP tournant`, `détéction`
 ## Préambule
 ##### Ressources
 | Doc          | Lien               |
