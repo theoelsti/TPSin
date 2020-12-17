@@ -1,5 +1,5 @@
 # 9 - Détection de bordure
-
+###### tags: `TP tournant`, `détection`
 ## Préambule
 ##### Ressources
 | Doc          | Lien               
