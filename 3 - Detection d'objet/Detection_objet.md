@@ -5,7 +5,7 @@
 | Doc          | Lien               |
 | ----------------- |:----------------------- |
 | HC-SR04 | [:link:][https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/] |
-| Browser Extension | [:link:][https://www.adafruit.com/product/157] |
+| TSOP38238 | [:link:][https://www.adafruit.com/product/157] |
 ## Diagramme des cas d'utilisation 
 
 ##### Proposer un diagramme de cas d’utilisation correspondant à votre problématique
