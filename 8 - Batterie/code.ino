@@ -9,8 +9,6 @@ void setup(){
 void loop(){ 
      nvalue = analogRead(A2);
      qt = 0.004882813;
-     Serial.println(qt,20);
-     delay(5000);
      Uve = nvalue*qt;
      Serial.println(Uve);
      delay(5000);
