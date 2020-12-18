@@ -63,7 +63,14 @@ void loop()
 }
 ```
 #### Présenter le programme ou partie permettant de trouver l’emplacement des obstacles
-????
+```cpp=1  
+    long distanceCM;
+    Serial.println("La distance avec l'objet devant est de ");
+    distanceCM = ultrasonic.MeasureInCentimeters(); 
+    Serial.print(distanceCM);//0~400cm
+    Serial.println(" cm");
+    delay(250);
+```
 #### Présenter les limites de fonctionnement de votre capteur et axe d’améliorations possible
 
 Le principal probleme est le suivant : si notre robot se trouve face à une surface absorbant les ondes acoustiques, il ne pourra pas déterminer la distance avec celle-ci.
