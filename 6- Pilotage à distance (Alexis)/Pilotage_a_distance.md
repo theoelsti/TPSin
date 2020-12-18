@@ -44,7 +44,169 @@
 
 
 ## Manipulation 
-#### Réalisez votre prototype
 
 #### Présenter le programme ou partie permettant d’assurer la transmission coté émetteur et récepteur
-~Théophile FOUILLET
+> Il nous faut **2** programmes : 
+
+- Un pour l'esclave
+
+```cpp=1
+#include <SoftwareSerial.h>
+#define RxD         7
+#define TxD         6
+#define PINLED      3
+#define LEDON()     digitalWrite(PINLED, HIGH)
+#define LEDOFF()    digitalWrite(PINLED, LOW)
+#define DEBUG_ENABLED  1
+SoftwareSerial blueToothSerial(RxD,TxD);
+
+void setup()
+{
+    Serial.begin(9600);
+    pinMode(RxD, INPUT);
+    pinMode(TxD, OUTPUT);
+    pinMode(PINLED, OUTPUT);
+    LEDOFF();
+
+    setupBlueToothConnection();
+}
+
+void loop()
+{
+    char recvChar;
+
+    while(1)
+    {
+        if(blueToothSerial.available())
+        {
+            recvChar = blueToothSerial.read();
+
+
+            if(recvChar == '1')
+            {
+                Serial.println("On Avance");
+                LEDON();
+            }
+            else if(recvChar == '2')
+            {
+                Serial.println("A gauche");
+                LEDOFF();
+            }
+            else if(recvChar == '3')
+            {
+                Serial.println("On recule");
+                LEDOFF();
+            }
+            else if(recvChar == '4')
+            {
+                Serial.println("A Droite");
+                LEDOFF();
+            }
+        }
+    }
+}
+
+
+void setupBlueToothConnection()
+{
+/*
+configuration du bt en plusieurs etapes, changement du nom de host etc... Utile !
+
+*/
+
+  blueToothSerial.begin(9600);
+
+  blueToothSerial.print("AT");
+  delay(400); 
+
+  blueToothSerial.print("AT+DEFAULT");
+  delay(2000); 
+
+  blueToothSerial.print("AT+NAMESeeedBTSlave");
+  delay(400);
+
+  blueToothSerial.print("AT+PIN0000");
+  delay(400);
+ 
+  blueToothSerial.print("AT+AUTH1");
+  delay(400);
+
+  blueToothSerial.flush();
+
+}
+```
+- Un pour le maître
+```cpp=1
+#include <SoftwareSerial.h>
+
+#define RxD         7
+#define TxD         6
+#define PINBUTTON   3
+#define DEBUG_ENABLED  1
+
+String incomingData;
+String readString;
+SoftwareSerial blueToothSerial(RxD, TxD);
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(RxD, INPUT);
+  pinMode(TxD, OUTPUT);
+  pinMode(PINBUTTON, INPUT);
+  setupBlueToothConnection();
+  delay(1000);
+  Serial.flush();
+  blueToothSerial.flush();
+}
+
+void loop()
+{
+  while (Serial.available()) {
+    char c = Serial.read(); 
+    readString += c;
+    delay(2); 
+  }
+
+ if (readString.length() > 0) { 
+    int n = readString.toInt(); 
+    blueToothSerial.print(n);
+    readString="";
+  } 
+}
+
+/*
+configuration du bt en plusieurs etapes, changement du nom de host etc... Utile !
+
+*/
+void setupBlueToothConnection()
+{
+
+
+  blueToothSerial.begin(9600);
+
+  blueToothSerial.print("AT");
+  delay(400);
+
+  blueToothSerial.print("AT+DEFAULT");
+  delay(2000);
+
+  blueToothSerial.print("AT+NAMESeeedMaster");
+  delay(400);
+
+  blueToothSerial.print("AT+ROLEM");
+  delay(400);
+
+
+  blueToothSerial.print("AT+AUTH1");
+  delay(400);
+
+  blueToothSerial.print("AT+CLEAR");
+  delay(400);
+
+  blueToothSerial.flush();
+
+
+}
+```
+~Théophile FOUILLET & Alexis Fourquier
