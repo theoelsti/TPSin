@@ -23,6 +23,6 @@
 :heavy_check_mark: **9- Détection de bordure**
 
 ### TP BUS
-:heavy_check_mark: **1- TP1 bus can
+:heavy_check_mark: **1- TP1 bus can**
 
 Pour toute demande, rendez-vous sur mon [Discord](https://discord.gg/JcWXQjXfUX)
