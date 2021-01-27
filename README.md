@@ -1,4 +1,4 @@
-# Bienvenue sur mon Repo des TP Tournant! 
+# Bienvenue sur mon Repo de TP! 
 
 ### Vous trouverez ici l'intégralité des code & comptes rendus des tp.
 
