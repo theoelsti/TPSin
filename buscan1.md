@@ -25,17 +25,19 @@ Cd(S.Se) est la moyenne des deux valeurs, correspondant à l'approximation de la
 
 > Déterminer pour quelle longueur d’onde le capteur GL5528 a la meilleure sensibilité.
 
-Le capteur **GL5528** a une meilleure sensibilité pour la longueur d'onde de 610nm
+Le capteur **GL5528** a une meilleure sensibilité sur le jaune/orange
 
 # Question 4
 
 > Quelles-sont les longueurs d’ondes que le capteur de lumière GL5528 est capable de détecter en présentant une atténuation de sa sensibilité comprise entre 0dB et 6dB ?
 
-Entre 400 et 1000 nm.
+Entre 550 et 800 nm
+
 # Question 5 
 > La figure 2 détaille la décomposition spectrale de la lumière. Quelles-sont les couleurs que le capteur de lumière GL5528 est capable de détecter en présentant une atténuation de sa sensibilité comprise entre 0dB et 6dB ?
 
 2854k couleurs sont detectables par le capteur GL5528
+
 # Question 6
 > A l’aide du document fourni en annexe 0, déterminer quel-est le flux lumineux moyen présent dans une salle de classe ?
 
