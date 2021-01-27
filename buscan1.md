@@ -6,7 +6,7 @@
 # Question 1 
 > Quelles-sont les grandeurs physiques présentes en entrée et en sortie du capteur de luminosité ?
 
-La grandeur physique en entrée est de la **Lumiere**, en lumens, et en sortie des valeurs analogiques, exprimant une valeur approximative en **Lumens**
+La grandeur physique en entrée est de la **Lumiere**, en lumens, et en sortie de l'énergie electrique, exprimant une valeur approximative en **Lumens**
 
 # Question 2
  > Sur la documentation du constructeur du capteur GL5528, la figure présentant la réponse spectrale fait apparaître trois courbes. A quoi correspondent-elles ?
